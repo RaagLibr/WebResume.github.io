@@ -40,8 +40,7 @@ background: linear-gradient(45deg,rgb(66, 66, 255),rgb(198, 40, 198));
 
 .SectionPadding h1{
     padding: 1em 1em ;
-
-    text-shadow: 1px 1px 5px magenta;
+    font-size: 2.5em;
     text-align: center;
 }
 
