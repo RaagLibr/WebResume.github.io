@@ -1,0 +1,203 @@
+*
+    {
+        margin: 0;
+        padding: 0;
+        text-transform: capitalize;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+
+.navbar
+{
+    box-shadow: .5px .5px 10px rgba(0, 0, 0,.7);
+}
+.MainHeader
+{
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+}
+.AppButton
+{
+    height: 3rem;
+}
+
+.MyGradiant
+{
+background: linear-gradient(45deg,rgb(66, 66, 255),rgb(198, 40, 198));
+    
+}
+.SmallLogo
+{
+    height: 3rem;
+}
+
+.SectionPadding
+{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.SectionPadding h1{
+    padding: 1em 1em ;
+
+    text-shadow: 1px 1px 5px magenta;
+    text-align: center;
+}
+
+img.AppButton
+{
+    transition:all 1s ease;
+
+}
+img.AppButton:hover
+{
+     filter:drop-shadow(0px 0px 15px rgba(0, 0, 0, 1)) ;
+}
+
+.feature_icon
+{
+   font-size: 4rem;
+}
+
+.icon_gradiant
+{
+    background: -webkit-linear-gradient(rgb(115, 115, 239),rgb(198, 19, 198));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dl_section
+{
+    position: relative;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url("../img/bg.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.my_shadow
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-backdrop
+{
+    z-index: 1 !important;
+}
+.container-gallery
+    {
+        padding: 2rem;
+        position: relative;
+        min-height: 100vh;
+        background: white;
+    }
+
+    .container-gallery h1
+    {
+        padding: 2em 0em 1em 0em;
+        text-align: center;
+        size: 40px;
+        color: black;
+        padding: 15x;
+        font-weight: normal;
+    }
+
+    .container-gallery .video-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .container-gallery .video-container  .video
+    {
+        height: 200px;
+        width: 350px;
+        border: 5px solid white;
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .container-gallery .video-container  .video video
+    {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .2s linear;
+    }
+
+    .container-gallery .video-container  .video:hover video
+    {
+        transform: scale(1.1);
+    }
+
+
+    .container-gallery .video-container  .video img
+    {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .2s linear;
+    }
+
+    .container-gallery .video-container  .video:hover img
+    {
+        transform: scale(1.1);
+    }
+
+    .container-gallery .popup-video
+    {
+        position: fixed;
+        top: 0px;left: 0px;
+        z-index: 100;
+        background: rgba(0, 0, 0,.4);
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    .container-gallery .popup-video video
+    {
+        position: relative;
+        top: 50%;left: 50%;
+        transform: translate(-50%,-50%);
+        width: 750px;
+        border-radius: 5px;
+        border: 2px white solid;
+        object-fit: cover;
+    }
+
+    .container-gallery .popup-video span
+    {
+        position: absolute;
+        top: 2em;right:3em;
+        font-size: 50px;
+        color: white;
+        font-weight: bolder;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+
+    @media (max-width: 768px)
+    {
+        .container-gallery .popup-video video
+         {
+            width: 90%;
+
+        }
+    }
+    
